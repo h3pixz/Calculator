@@ -1,0 +1,276 @@
+body {
+    background-color: #626d71;
+    font-family: "Open Sans";
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: #535353;
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.vlastore {
+    color: #cdcdc0;
+    text-align: center;
+    margin-left: 500px;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.logotip {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+ul a {
+    color: #141313;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.4s;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    padding: 8px 8px;
+    white-space: nowrap; /* Текст на одной строке */
+    border-radius: 10px;
+    background-color: #ffb742;
+
+}
+
+ul a:hover {
+    color: #000000;
+    background-color: #ffb74289;
+    border-radius: 10px;
+}
+
+#work h1{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    margin-top: -90px;
+}
+
+#work h2{
+    font-family: "Mulish", sans-serif;
+    color: rgb(228, 227, 227);
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 50px; 
+    font-size: 17px;
+}
+
+#work a{
+    color: white;
+    font-weight: bold;
+    
+}
+
+#work a:hover{
+    color: rgba(255, 255, 255, 0.518);
+
+}
+
+
+.bape{
+    width:400px;
+    float: right;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.bape:hover{
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8);
+}
+
+#work p{
+    margin-top: 80px;
+    font-family: "Mulish", sans-serif;
+    font-size:21px;
+    font-weight: bold;
+}
+
+#calc h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: "Mulish", sans-serif;
+    margin-top:-90px; 
+   
+}
+
+#calc h2{
+    width:800px;
+}
+
+#calc{
+    
+    background-color: #ffb7429c;
+    margin-top: 10px;
+}
+
+section{
+    padding: 100px;
+    border: solid 2px;
+    border-radius: 15px;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px;
+    width: 350px;
+    border-radius: 13px;
+    transition: background-color 0.4s;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+button:hover{
+    background-color: white;
+}
+
+#quantity{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#pricePerUnit{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#result {
+    font-size: 20px;
+    font-family: bold;
+}
+
+.logotip1{
+height: 300px;
+float: right;
+margin-top: -250px;
+border-radius: 25px;
+
+}
+
+#soc h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: "Mulish", sans-serif;
+    margin-top:-80px;
+}
+
+.teg{
+    height:200px;
+    padding: 30px 30px 90px 30px;
+   
+}
+
+.cont{
+    width: 260px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    border: solid 2px;
+    transition: background-color 0.4s;
+}
+
+.cont h2{
+    color: black;
+    text-align: center; 
+    font-size: 36px;
+    font-family: "Mulish", sans-serif;
+    margin-top: -80px;
+    font-style: solid bold;
+}
+
+.inst{
+    height:200px;
+    padding: 30px 30px 90px 30px;
+}
+
+.cont2{
+    width: 260px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    border: solid 2px;
+    transition: background-color 0.4s;
+}
+
+.cont2 h2{
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Mulish", sans-serif;
+    margin-top:-80px;
+    font-style: solid bold;
+}
+
+
+
+.socs-title {
+    text-align: center; /* Центрирование текста по горизонтали */
+    margin-top: 0; /* Убираем отступ сверху */
+    margin-bottom: 20px; /* Добавляем небольшой отступ снизу */
+}
+
+.socs-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Выравнивание контейнеров по центру горизонтально */
+    gap: 20px; /* Пространство между контейнерами */
+}
+
+#soc{
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+#work{
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cont:hover{
+    background-color: #c0c0c0;
+}
+
+.cont2:hover{
+    background-color: #c0c0c0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

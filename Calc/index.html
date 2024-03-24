@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VLASTORE OPT</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+
+</head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <a href="#work">Условия работы</a>
+                    <a href="#calc">Калькулятор стоимости</a>
+                    <a href="#soc">Мои соцсети</a>
+                </ul>
+            </nav>
+            <div class="vlastore">
+                <h1>VLASTORE OPT</h1>
+            </div>
+            <div class="logo">
+                <img src="logo.jpg" alt="Логотип" class="logotip">
+            </div>
+        </header>
+
+        <section id="work">
+            <h1>Условия работы</h1>
+            <h2>РАБОТАЮ ТОЛЬКО ПО 100% ПРЕДОПЛАТЕ, ОТЗЫВЫ ПО ССЫЛКЕ <a href="https://www.instagram.com/vlastoreby/">ИНСТАГРАММ</a> И В <a href="https://t.me/+3t7DmZIAcYpjZWUy">ТГК</a></h2>
+            
+                <div class="img">
+                    <img src="bape.jpg" alt="Бейп" class="bape">
+                </div>
+
+            <p>1️⃣ По названию или фото я ищу нужную вещь, высылаю вам ее фото и называю оптовую цену.<br>
+
+                2️⃣ С момента оплаты товара, в течении 5-8 дней я присылаю фотоотчет вашего заказа, который прибыл на склад в Китае. <br>
+                
+                3️⃣ Время доставки 15-25 дней. Все зависит от того, как товар пройдет через таможню.<br>
+                
+                4️⃣ По прибытию товара в РБ осуществляется оплата за доставку с китая (11$ за 1кг посылки). Например, если ваша посылка весит 500гр, то доставка стоит 5,5$.<br>
+                
+                5️⃣ Высылаю ваш заказ по Европочте/Белпочте, либо же личная встреча в Гродно.</p>
+
+                <p>Я не несу ответственность за качество товара, я несу ответственность только за перевозку. При заказе товара просите скинуть ссылку на товар и смотрите на него отзывы.</p>
+            
+        </section>
+
+        <section id="calc">
+            
+            <h1>Калькулятор стоимости</h1>
+            <h2>Калькулятор стоимости товара с комиссией (без учета доставки). <br>Доставка известна по прибытию товара в РБ.</h2>
+
+
+            <form id="priceCalculator">
+                <div>
+                    <label for="quantity">Количество, штук:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <div>
+                    <label for="pricePerUnit">Цена за штуку(юани):</label>
+                    <input type="number" id="pricePerUnit" name="pricePerUnit" required>
+                </div>
+                <button type="button" onclick="calculatePrice()">Рассчитать</button>
+            </form>
+            <div id="result"></div>
+
+            <script>
+                function calculatePrice() {
+                    var quantity = parseFloat(document.getElementById('quantity').value);
+                    var pricePerUnit = parseFloat(document.getElementById('pricePerUnit').value);
+        
+                    var deliveryCost = 7.31; // Предположим, доставка по Китаю стоит $7.31
+        
+                    var total = (quantity * (0.44 * pricePerUnit) + deliveryCost) / (1 - 0.4) + 30;
+        
+                    document.getElementById('result').innerHTML = "Итоговая сумма: " + total.toFixed(2);
+                }
+            </script>
+
+            <div class="logo">
+                <img src="logo.jpg" alt="Логотип" class="logotip1">
+            </div>
+        </section>
+    
+     <section id="soc">
+            <h1 class="socs-title">Мои СоцСети</h1>
+        <div class="socs-container">
+                <a href="https://t.me/vlastoreopt">
+                    <div class="cont">
+                        <img src="tg.png" class="teg">
+                        <h2>VLASTORE OPT</h2>
+                </a>
+                    </div>
+                    <a href="https://www.instagram.com/vlastoreby/">
+                        <div class="cont2">    
+                            <img src="inst.png" class="inst">
+                            <h2>VLASTOREBY</h2>
+                    </a>
+           </div>
+        </div>
+     </section>
+
+
+
+
+
+
+
+
+
+       
+    </body>
+</html>
